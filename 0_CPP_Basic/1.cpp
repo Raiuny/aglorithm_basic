@@ -2,5 +2,7 @@
 using namespace std;
 int main()
 {
-    cout << "hello world" << endl;
+    cout << showbase << uppercase << hex << 15 <<endl;
+    cout << noshowbase << oct <<15<<endl;
+    return 0;
 }
