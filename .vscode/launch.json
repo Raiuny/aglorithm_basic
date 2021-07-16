@@ -5,7 +5,8 @@
             "name": "g++.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "program":
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -20,7 +21,11 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "task g++" //修改此项
+            "code-runner.executorMap":{
+                "cpp":"chcp 65001 "
+            },
+            "preLaunchTask": "task g++",//修改此项
+            
         }
     ]
 }
