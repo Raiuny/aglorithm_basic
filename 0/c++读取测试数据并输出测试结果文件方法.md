@@ -18,11 +18,11 @@ int main()
 }
 ```
 ```shell
-g++ -o read read.cpp 
+gcc -o read read_freopen.c 
 .\read.exe
 comp out.txt out_std.txt
 ```
-用fc或comp命令可以看最后的文件和标准答案文件内容是否相同。
+在cmd中使用fc或comp命令可以看最后的文件和标准答案文件内容是否相同。
 #### 直接重定向
 ```cpp
 #include <cstdio>
@@ -36,3 +36,8 @@ int main()
     return 0;
 }
 ```
+```
+gcc -o read read.c
+.\read.exe < in.txt > out.txt
+```
+使用type或者more来查看输出txt文件的内容，使用comp和fc来比较与标准答案之间的差别
