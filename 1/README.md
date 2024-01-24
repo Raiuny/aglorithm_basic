@@ -92,7 +92,7 @@
 - [x] 上标 2^n^ 下标2~t~
  -->
 
-#### iomani库
+#### iomanip库
 - setfill(char c)  设置以c表示的填充字
 - setprecision(int n) 设置以n表示的数值精度
 - setw(int n)  设置以n表示的宽度
