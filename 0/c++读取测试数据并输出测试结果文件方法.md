@@ -20,4 +20,19 @@ int main()
 ```shell
 g++ -o read read.cpp 
 .\read.exe
+comp out.txt out_std.txt
+```
+用fc或comp命令可以看最后的文件和标准答案文件内容是否相同。
+#### 直接重定向
+```cpp
+#include <cstdio>
+int main()
+{
+    int a, b;
+    while (scanf("%d %d",&a,&b)!=EOF)
+    {
+        printf("%d ",a*b);
+    }
+    return 0;
+}
 ```
