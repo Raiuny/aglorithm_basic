@@ -20,5 +20,4 @@ int main()
 ```shell
 g++ -o read read.cpp 
 .\read.exe
-
 ```
