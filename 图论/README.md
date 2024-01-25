@@ -31,6 +31,7 @@ for (int i = idx[x]; i ; i = next[i])
 #### Dijkstra算法
 定义：$dist[i]$表示源到节点i的最短路径
 因此满足公式：
+
 $$
     dist[i]=\min_{j\in L_i} dist[j] + d[j][i]
 $$
