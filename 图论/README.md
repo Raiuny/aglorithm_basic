@@ -17,7 +17,7 @@ void add(int x, int y, int val) { // 节点x -> 节点y 有向边，边权为val
     idx[x] = num;
 }
 ```
-<img src="imgs/1.jpg" alt="123" width="50%">
+<img src="imgs/1.jpg" alt="123" width="30%">
 
 idx[i]为指针，用于指向i所连的第一条边在数组ver和edge中的位置，然后使用next[i]可以得到下一条边在数组ver和edge中的位置，直到next[i]为0为止，则遍历完节点i为起始点的所有边。
 遍历方法如下：
