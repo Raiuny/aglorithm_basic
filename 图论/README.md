@@ -27,3 +27,11 @@ for (int i = idx[x]; i ; i = next[i])
     int y = ver[i], val = edge[i];
 }
 ```
+## 单源最短路径问题
+#### Dijkstra算法
+定义：$dist[i]$表示源到节点i的最短路径
+因此满足公式：
+$$
+    dist[i]=\min_{j\in L_i} dist[j] + d[j][i]
+$$
+即源到节点i的最短路径长度 = (遍历与i相连的所有节点j)到j的最短路径 + j到i之间的距离
